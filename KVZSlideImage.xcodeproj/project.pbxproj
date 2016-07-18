@@ -15,6 +15,7 @@
 		0A4CE0941D3CD06400498E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4CE0921D3CD06400498E68 /* LaunchScreen.storyboard */; };
 		0A4CE09F1D3CD06400498E68 /* KVZSlideImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CE09E1D3CD06400498E68 /* KVZSlideImageTests.m */; };
 		0A4CE0AA1D3CD06400498E68 /* KVZSlideImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CE0A91D3CD06400498E68 /* KVZSlideImageUITests.m */; };
+		0A4CE0BA1D3CD78A00498E68 /* KVZSlidePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4CE0B91D3CD78A00498E68 /* KVZSlidePictureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0A4CE0A51D3CD06400498E68 /* KVZSlideImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVZSlideImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4CE0A91D3CD06400498E68 /* KVZSlideImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVZSlideImageUITests.m; sourceTree = "<group>"; };
 		0A4CE0AB1D3CD06400498E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4CE0B81D3CD78A00498E68 /* KVZSlidePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVZSlidePictureView.h; sourceTree = "<group>"; };
+		0A4CE0B91D3CD78A00498E68 /* KVZSlidePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVZSlidePictureView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		0A4CE0831D3CD06400498E68 /* KVZSlideImage */ = {
 			isa = PBXGroup;
 			children = (
+				0A4CE0B71D3CD72300498E68 /* KVZSlideImageView */,
 				0A4CE0871D3CD06400498E68 /* AppDelegate.h */,
 				0A4CE0881D3CD06400498E68 /* AppDelegate.m */,
 				0A4CE08A1D3CD06400498E68 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				0A4CE0AB1D3CD06400498E68 /* Info.plist */,
 			);
 			path = KVZSlideImageUITests;
+			sourceTree = "<group>";
+		};
+		0A4CE0B71D3CD72300498E68 /* KVZSlideImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0A4CE0B81D3CD78A00498E68 /* KVZSlidePictureView.h */,
+				0A4CE0B91D3CD78A00498E68 /* KVZSlidePictureView.m */,
+			);
+			name = KVZSlideImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				0A4CE08C1D3CD06400498E68 /* ViewController.m in Sources */,
 				0A4CE0891D3CD06400498E68 /* AppDelegate.m in Sources */,
 				0A4CE0861D3CD06400498E68 /* main.m in Sources */,
+				0A4CE0BA1D3CD78A00498E68 /* KVZSlidePictureView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KVZSlideImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kvz.KVZSlideImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KVZSlideImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kvz.KVZSlideImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
